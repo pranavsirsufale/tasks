@@ -1,0 +1,16 @@
+Task :
+
+Write a shell script that will do the following on VM :
+1) install mysql server,
+enable the mysql service so that it runs after every node reboot,
+verify mysql is running,
+create a database with the name test
+2) install htop, curl
+3) install python and print the version of python after installation.
+4) install golang and print the version of golang after installation.
+5) install docker,
+print docker version,
+check docker is running,
+enable the current non root user to run docker commands without sudo,
+pull nginx docker image using current user.
+6) copy any file from your local laptop to ubuntu VM. Verify the checksum of the file on local laptop and VM and verify that they match.

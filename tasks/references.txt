@@ -1,0 +1,77 @@
+openssh server : https://documentation.ubuntu.com/server/how-to/security/openssh-server/index.html
+
+
+github : https://www.geeksforgeeks.org/push-codes-from-linux-ubuntu-to-github-using-ssh-key/
+
+
+Bash Script ( YouTube freecode camp ) : https://youtu.be/tK9Oc6AEnR4?si=D1Xu6O6trvU5l9xA
+
+
+KodeKloud : https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/aa45ff2b-80fc-4f74-8048-a8076be7c85d
+
+
+freecodecamp : https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/#heading-how-to-get-started-with-bash-scripting
+
+
+virtualbox : https://phoenixnap.com/kb/install-virtualbox-on-ubuntu
+
+
+installation : https://www.geeksforgeeks.org/how-to-install-ubuntu-on-virtualbox/
+
+
+
+geekforgeeks : https://www.geeksforgeeks.org/introduction-linux-shell-shell-scripting/
+
+
+
+ubntu : https://ubuntu.com/
+
+
+
+ubuntu server download ( LTS ) : https://ubuntu.com/download/server
+
+
+
+install mysql server : https://documentation.ubuntu.com/server/how-to/databases/install-mysql/index.html
+
+
+
+mysql : https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install-linux-quick.html
+
+
+
+python installation : https://discuss.python.org/t/install-python-3-11-9-on-ubuntu/51093/3
+
+
+go installation : https://www.cyberciti.biz/faq/how-to-install-gol-ang-on-ubuntu-linux/
+
+
+
+go : https://go.dev/doc/install/source
+
+
+
+docker : https://www.geeksforgeeks.org/install-and-use-docker-on-ubuntu-2204/
+
+
+
+docker : https://docs.docker.com/desktop/setup/install/linux/ubuntu/
+
+
+
+
+Note: most of the references have been taken random blogs, posts and youtube videos. especially 
+when I stuck, took a lot of help from google searches.
+
+
+
+
+
+
+
+
+
+
+
+
+
