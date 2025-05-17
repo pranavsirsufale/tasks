@@ -1,3 +1,13 @@
+https://documentation.ubuntu.com/server/explanation/networking/configuring-networks/index.html
+
+
+
+https://www.geeksforgeeks.org/disabling-and-enabling-an-interface-on-linux-system/
+
+
+
+
+
 openssh server : https://documentation.ubuntu.com/server/how-to/security/openssh-server/index.html
 
 
@@ -57,6 +67,17 @@ docker : https://www.geeksforgeeks.org/install-and-use-docker-on-ubuntu-2204/
 
 docker : https://docs.docker.com/desktop/setup/install/linux/ubuntu/
 
+
+
+
+https://askubuntu.com/questions/982706/inet-addr-missing-after-ifconfig
+
+
+https://stackoverflow.com/questions/11828270/how-do-i-exit-vim
+
+
+
+https://community.spiceworks.com/t/my-ubuntu-server-lost-connectivity-only-shows-inet6/743882/3
 
 
 
