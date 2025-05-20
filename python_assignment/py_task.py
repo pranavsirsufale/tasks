@@ -62,10 +62,13 @@ try:
         em_record = cursor.fetchone()
         if len(em_record) == 0:
             raise Exception("No record found")
-        return em_record  
+        connection.commit()
+        return em_record
 
-    def add_record(rec):
-        pass    
+    def add_record(record_dict):
+        cursor.execute(f"insert into employee_info (`name`,`surname`,`employee_no`,`designation`,`joining_date`, `address`) values( '{record_dict['name']}' , '{record_dict['surname']}' , '{record_dict['employee_no']}' , '{record_dict['designation']}' , '{record_dict['joining_date']}' , '{record_dict['address']}');")
+        print(cursor.rowcount,"Record Inserted")
+        connection.commit()
 
 except Exception as e:
     print(e)
@@ -79,6 +82,7 @@ print('''
 4. Enter 4 to delete a record
 5. Enter 5 to fetch a record
 6. Enter 6 to update a record
+7. Enter 7 to Add a record
 ''')
 
 operation = int(input('Select the below operations: '))
@@ -108,9 +112,9 @@ match operation:
         print(emp_detail)
         print('========================================')
         print("If you want to make changes then enter updated details otehrwise leave it blank ")
-        name = input('Enter Name : ')
-        surname = input("Enter Surname : ")
-        designation = input("Enter Designation : ")
+        name = input(f"Enter Name ( Existing Name : '{emp_detail[1]}') : ")
+        surname = input(f"Enter Surname (Existng Surname : '{emp_detail[2]}') : ")
+        designation = input(f"Enter Designation (Existing : '{emp_detail[4]}')  : ")
         address = input("Enter Address : ")
 
         if name.strip() == '':
@@ -128,3 +132,23 @@ match operation:
         
         print('========================================')
 
+    case 7:
+        record_dict = dict({
+            "name":"",
+            "surname":"",
+            "employee_no":"",
+            "designation":"",
+            "joining_date":"",
+            "address":"",
+        })
+        record_dict['name'] = input('Enter your Name : ')
+        record_dict['surname'] = input("Enter your Surname : ")
+        record_dict['employee_no'] = input("Enter your Employee no : ")
+        record_dict['designation'] = input('Enter your Designation : ')
+        year = int(input("Enter year : "))
+        month = int(input("enter month : "))
+        day = int(input("Enter Day : "))
+        record_dict['joining_date'] = f"{year},{month},{day}"
+        record_dict['address'] = input("Enter your Address : ")
+
+        add_record(record_dict)
