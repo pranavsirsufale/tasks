@@ -87,16 +87,10 @@ print('''
 
 operation = int(input('Select the below operations: '))
 
-while "exit":
+while operation != "out":
     print('''
     ==============================================================
     Note : to close the app type 'exit'
-
-
-
-    
-
-   
     
     ''')
    
@@ -165,3 +159,12 @@ while "exit":
             record_dict['address'] = input("Enter your Address : ")
 
             add_record(record_dict)
+
+        case 'exit':
+            break
+    print('''
+    
+
+
+    ========================================================================
+    ''')
