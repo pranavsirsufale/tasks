@@ -87,68 +87,81 @@ print('''
 
 operation = int(input('Select the below operations: '))
 
-match operation:
-    case 1:
-        add_records(employee_array)
-        
-    case 2:
-        remove_all_records()
-        
-    case 3:
-        get_records()
-        
-    case 4:
-        emp_id = int(input('Please enter Id of an employee: '))
-        delete_record(emp_id)
+while "exit":
+    print('''
+    ==============================================================
+    Note : to close the app type 'exit'
+
+
+
     
-    case 5:
-        emp_id = int(input('Please enter Id of an employee: '))
-        an_employee = fetch_a_record(emp_id)
-        print(an_employee)
 
-    case 6:
-        emp_id = int(input('Please enter Id of an employee: '))
-        emp_detail = fetch_a_record(emp_id)
-        print(emp_detail)
-        print('========================================')
-        print("If you want to make changes then enter updated details otehrwise leave it blank ")
-        name = input(f"Enter Name ( Existing Name : '{emp_detail[1]}') : ")
-        surname = input(f"Enter Surname (Existng Surname : '{emp_detail[2]}') : ")
-        designation = input(f"Enter Designation (Existing : '{emp_detail[4]}')  : ")
-        address = input("Enter Address : ")
-
-        if name.strip() == '':
-            name = emp_detail[1]
-        if surname.strip() == '':
-            surname = emp_detail[2]
-        if designation.strip() == '':
-            designation = emp_detail[4]
-        if address.strip() == '':
-            address = ','.join(emp_detail[6:])
-
-
-        update_record(emp_id,name, surname,designation,address)
-
+   
+    
+    ''')
+   
+    match operation:
+        case 1:
+            add_records(employee_array)
+            
+        case 2:
+            remove_all_records()
+            
+        case 3:
+            get_records()
+            
+        case 4:
+            emp_id = int(input('Please enter Id of an employee: '))
+            delete_record(emp_id)
         
-        print('========================================')
+        case 5:
+            emp_id = int(input('Please enter Id of an employee: '))
+            an_employee = fetch_a_record(emp_id)
+            print(an_employee)
 
-    case 7:
-        record_dict = dict({
-            "name":"",
-            "surname":"",
-            "employee_no":"",
-            "designation":"",
-            "joining_date":"",
-            "address":"",
-        })
-        record_dict['name'] = input('Enter your Name : ')
-        record_dict['surname'] = input("Enter your Surname : ")
-        record_dict['employee_no'] = input("Enter your Employee no : ")
-        record_dict['designation'] = input('Enter your Designation : ')
-        year = int(input("Enter year : "))
-        month = int(input("enter month : "))
-        day = int(input("Enter Day : "))
-        record_dict['joining_date'] = f"{year},{month},{day}"
-        record_dict['address'] = input("Enter your Address : ")
+        case 6:
+            emp_id = int(input('Please enter Id of an employee: '))
+            emp_detail = fetch_a_record(emp_id)
+            print(emp_detail)
+            print('========================================')
+            print("If you want to make changes then enter updated details otehrwise leave it blank ")
+            name = input(f"Enter Name ( Existing Name : '{emp_detail[1]}') : ")
+            surname = input(f"Enter Surname (Existng Surname : '{emp_detail[2]}') : ")
+            designation = input(f"Enter Designation (Existing : '{emp_detail[4]}')  : ")
+            address = input("Enter Address : ")
 
-        add_record(record_dict)
+            if name.strip() == '':
+                name = emp_detail[1]
+            if surname.strip() == '':
+                surname = emp_detail[2]
+            if designation.strip() == '':
+                designation = emp_detail[4]
+            if address.strip() == '':
+                address = ','.join(emp_detail[6:])
+
+
+            update_record(emp_id,name, surname,designation,address)
+
+            
+            print('========================================')
+
+        case 7:
+            record_dict = dict({
+                "name":"",
+                "surname":"",
+                "employee_no":"",
+                "designation":"",
+                "joining_date":"",
+                "address":"",
+            })
+            record_dict['name'] = input('Enter your Name : ')
+            record_dict['surname'] = input("Enter your Surname : ")
+            record_dict['employee_no'] = input("Enter your Employee no : ")
+            record_dict['designation'] = input('Enter your Designation : ')
+            year = int(input("Enter year : "))
+            month = int(input("enter month : "))
+            day = int(input("Enter Day : "))
+            record_dict['joining_date'] = f"{year},{month},{day}"
+            record_dict['address'] = input("Enter your Address : ")
+
+            add_record(record_dict)
